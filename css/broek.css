@@ -1,0 +1,286 @@
+/* ============================================================
+   JS-BREUK — aanvullingen op de brutalisme-stijl
+   console, terminal, vragenrijkector en voorbeeldblokken
+   ============================================================ */
+
+/* --- top --- */
+.topbar-brand { gap: 1.25rem; }
+.topbar-brand .badge { padding: 0.28rem 0.7rem; letter-spacing: 0.08em; white-space: nowrap; }
+.topbar-meta { line-height: 1.5; }
+.topbar-brand .stamp {
+  margin-right: 0.25rem;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  border: 2px solid var(--accent-3);
+  color: var(--accent-3);
+  padding: 0.15rem 0.4rem;
+  text-transform: uppercase;
+}
+.hero h1 em, .hero .lead em { font-style: normal; color: var(--warn); }
+.hero-meta { gap: 0.75rem; }
+.hero .chip { padding: 0.34rem 0.8rem; }
+
+/* --- zijbalk --- */
+.nav-list li button { display: flex; align-items: center; gap: 0.4rem; }
+.nav-list li.soon {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  opacity: 0.6;
+  padding: 0.35rem 0.6rem;
+  border-left: 3px solid var(--warn);
+  list-style: none;
+}
+
+/* --- topic-kop --- */
+.topic-head {
+  border: var(--border);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.15rem;
+  margin-bottom: 1.1rem;
+}
+.topic-head .topic-kicker {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+.topic-head h1 { font-size: 1.9rem; margin: 0.35rem 0 0; }
+
+/* --- topic-kaarten op home --- */
+.topic-card { text-align: left; display: block; padding: 1rem 1.05rem; }
+.topic-card .tc-dots { font-size: 0.78rem; line-height: 1.35; color: var(--ink-soft); margin-top: 0.42rem; }
+.topic-card .tc-meta {
+  display: block;
+  margin-top: 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-2);
+}
+
+/* --- blok-koppen --- */
+.block-head { display: flex; align-items: center; gap: 0.6rem; padding: 0.62rem 1.1rem; }
+.block-head .icon { margin-right: 0; }
+.block-head.warmup { background: var(--accent-3); color: var(--ink); }
+.block-head.oefening { background: var(--accent-2); color: #fff; }
+.block-head.bonus { background: var(--warn); color: var(--ink); }
+.block-head.vraag { background: var(--ink); color: var(--paper); }
+.block-head .stamp.inorde {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  border: 2px solid currentColor;
+  padding: 0.1rem 0.35rem;
+  background: transparent;
+}
+.block-head .stamp.inorde.yes { border-color: var(--ink); background: var(--accent-3); color: var(--ink); }
+.block-head .stamp.inorde.no { border-color: var(--ink); background: var(--accent); color: #fff; }
+
+/* --- opdrachttekst --- */
+.task-brief .must-list { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+.task-brief .must-list li { margin: 0.28rem 0; }
+.must-note { margin: 0.7rem 0 0; font-size: 0.78rem; opacity: 0.85; }
+kbd {
+  font-family: var(--mono);
+  background: var(--warn);
+  border: 2px solid var(--ink);
+  padding: 0 0.28rem;
+  font-size: 0.82em;
+}
+mark { background: var(--warn); color: var(--ink); padding: 0 0.15rem; }
+
+/* --- plakvelden --- */
+.plak-wrap { margin-top: 0.9rem; display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+.plak { display: block; }
+.plak > span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.3rem 0.5rem;
+  border: var(--border);
+  border-bottom: none;
+}
+.plak textarea {
+  width: 100%;
+  min-height: 250px;
+  resize: vertical;
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 0.6rem 0.7rem;
+  border: var(--border);
+  background: var(--paper);
+  color: var(--ink);
+  tab-size: 2;
+}
+.plak textarea:focus { outline: 3px solid var(--accent-2); outline-offset: -3px; }
+.plak textarea.terminal { background: var(--ink); color: #d9ffd9; min-height: 200px; }
+.oefening-acties { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin-top: 0.75rem; }
+.flex-push { flex: 1 1 auto; }
+
+/* --- console-uitvoer --- */
+.console {
+  margin-top: 0.9rem;
+  border: var(--border);
+  border-color: var(--accent-2);
+  background: var(--ink);
+  color: #eafdea;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+.console .editor-bar {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--accent-2);
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-bottom: var(--border);
+  border-color: var(--ink);
+}
+.console pre { padding: 0.6rem 0.75rem; overflow: auto; max-height: 260px; white-space: pre-wrap; }
+.console pre .regel { display: block; }
+.console pre .type-log { color: #eafdea; }
+.console pre .type-warn { color: var(--warn); }
+.console pre .type-fout { color: #ff8a6a; }
+.console pre .leeg { color: #9aa6b4; font-style: italic; }
+
+/* --- nagebouwd DOM --- */
+.domspiegel { margin-top: 0.6rem; }
+.domspiegel table { border-collapse: collapse; width: 100%; font-family: var(--mono); font-size: 0.78rem; }
+.domspiegel th, .domspiegel td { border: 2px solid var(--ink); padding: 0.3rem 0.5rem; text-align: left; background: var(--paper); }
+.domspiegel th { background: var(--ink); color: var(--paper); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.68rem; }
+
+/* --- vragen --- */
+.vragen { margin-top: 1rem; display: grid; gap: 0.9rem; }
+.vraag { border: var(--border); background: var(--paper); box-shadow: var(--shadow-sm); }
+.vraag > .vraag-kop {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  padding: 0.5rem 0.7rem;
+  border-bottom: var(--border);
+  background: var(--bg-alt);
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.vraag > .vraag-kop .vn { font-family: var(--mono); font-size: 0.68rem; background: var(--ink); color: var(--paper); padding: 0.1rem 0.35rem; }
+.vraag .vraag-body { padding: 0.6rem 0.7rem 0.75rem; }
+.vraag .opties { display: grid; gap: 0.35rem; margin-top: 0.35rem; }
+.vraag .opties label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  border: 2px solid var(--ink);
+  padding: 0.35rem 0.5rem;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.vraag .opties label:hover { background: var(--warn); }
+.vraag .opties input { margin-top: 0.15rem; accent-color: var(--accent-2); }
+.vraag textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  font-family: var(--body);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.6rem;
+  border: 2px solid var(--ink);
+  background: #fff;
+}
+.vraag .terug {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  border-top: 2px dashed rgba(0, 0, 0, 0.25);
+  padding-top: 0.45rem;
+}
+.vraag .terug.goed { color: #0a6b2f; }
+.vraag .terug.fout { color: var(--accent); }
+.vraag.goed > .vraag-kop { background: var(--accent-3); }
+.vraag.fout > .vraag-kop { background: var(--accent); color: #fff; }
+
+/* --- voorbeeld --- */
+.voorbeeld { margin-top: 0.9rem; }
+.voorbeeld pre { font-size: 0.8rem; line-height: 1.5; }
+.voorbeeld .code-label { font-size: 0.68rem; }
+
+/* --- feedbacklijst --- */
+.feedback { margin-top: 0.8rem; }
+.feedback.show { border: var(--border); padding: 0.8rem 0.9rem; }
+.feedback.show.ok { background: #d9f2e2; }
+.feedback.show.bad { background: #fff2ea; }
+.feedback .check-list { list-style: none; margin: 0.6rem 0 0; display: grid; gap: 0.26rem; }
+.feedback .check-list li {
+  display: grid;
+  grid-template-columns: 1.3rem 1.6rem 1fr;
+  gap: 0.5rem;
+  align-items: baseline;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.22);
+  padding-bottom: 0.22rem;
+  font-size: 0.85rem;
+}
+.feedback .check-list li.pass .msg { opacity: 0.6; }
+.feedback .check-list li .mk { font-family: var(--mono); font-weight: 700; }
+.feedback .check-list li.pass .mk { color: #0a6b2f; }
+.feedback .check-list li.fail .mk { color: var(--accent); }
+.feedback .check-list li .no { font-family: var(--mono); font-size: 0.7rem; opacity: 0.6; }
+.tip-line { margin: 0.6rem 0 0; font-size: 0.76rem; font-style: italic; opacity: 0.8; }
+
+/* --- terminaluitvoer van de simulator --- */
+.term-out { margin-top: 0.6rem; }
+
+/* --- print --- */
+@media print {
+  .topbar, .sidebar, .overlay, .plak-wrap, .oefening-acties, .site-footer, .feedback, .console { display: none !important; }
+  .main { margin-left: 0 !important; }
+}
+
+/* JS-BREUK: de klok-aanduiding naast het checkaantal */
+.block-head .stamp.klok {
+  background: var(--warn, #ffb300);
+  color: var(--ink, #0a0a0a);
+  border-color: var(--ink, #0a0a0a);
+}
+.block-head .stamp + .stamp { margin-left: 0.6rem; }
+
+/* JS-BREUK: het vermoed-vak — kleiner, geel randje, eigen lettertype */
+.vlak.vermoed {
+  min-height: 6.5rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #fffdf3;
+  border-color: var(--warn, #ffb300);
+}
+.vlak.vermoed:focus { border-color: var(--ink, #0a0a0a); }
+
+/* JS-BREUK: meerdere plakvelden (vermoed + code, terminal + code) moeten
+   naast elkaar staan, niet als één eindige stapel boven mekaar. */
+.plak-wrap { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.plak-wrap .vlak { min-height: 13rem; }
+.plak-wrap .vlak.vermoed { min-height: 13rem; }
+
+/* Lange regels in een voorbeeld, console of vraagbreuk: laten breken in
+   plaats van buiten beeld te rollen. De kind-combinator weegt zwaarder dan
+   de basisregel (.code-wrap pre) in style.css, dus dit wint de cascade. */
+.code-wrap > pre, .code-wrap > pre code,
+.console > pre, .console > pre code,
+.vraag .code-wrap > pre, .vraag .code-wrap > pre code,
+.task-brief .code-wrap > pre, .task-brief .code-wrap > pre code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

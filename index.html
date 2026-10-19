@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS-BREUK · Debuggen, testen en kapotte code lezen · Steven Vandersmissen</title>
+  <meta name="author" content="Steven Vandersmissen" />
+  <meta name="description" content="Debuggen, testen en kapotte code lezen: foutmeldingen, de callstack, meten met console.log, grensgevallen, verwijzingen, minimale voorbeelden en tests met de hand. Met zandbak, terminal en vermoed-vak. Geen oplossingen." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/broek.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu openen">☰ Onderdelen</button>
+      <span>&lt;JS&gt;-VOLG</span>
+      <span class="badge">5de · 6de jaar</span>
+      <span class="stamp">geen oplossingen</span>
+    </div>
+    <div class="topbar-meta">
+      <div>Auteur: <strong>Steven Vandersmissen</strong></div>
+      <div id="levelLabel">6de jaar · aansluitend op de basis</div>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">JavaScript · spoor 2: diepte en data</div>
+      <nav id="sidebarNav" aria-label="Hoofdnavigatie"></nav>
+      <div class="sidebar-foot">
+        JS-BREUK · <span id="foot-count">onderdelen</span><br />
+        © Steven Vandersmissen<br />
+        5de en 6de jaar · software development
+      </div>
+    </aside>
+
+    <main class="main" id="main"></main>
+  </div>
+
+  <footer class="site-footer">
+    <strong>JS-BREUK</strong> — code die je zélf typt, uitgevoerd in een afgeschermde zandbak ·
+    Auteur: <strong>Steven Vandersmissen</strong> ·
+    Brutalist UI · geen backend, geen opslag: herladen is proper beginnen
+  </footer>
+
+  <script src="js/sandbox.js"></script>
+  <script src="js/fakegit.js"></script>
+  <script src="js/checks.js"></script>
+  <script src="js/comp.js"></script>
+  <script src="js/broek.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
